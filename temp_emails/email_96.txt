@@ -1,7 +1,0 @@
-Subject: Microsoft Outlook Test Message
-From: Microsoft Outlook <pa.sasitheran@cre8iot.com>
-Date: 2025-07-07 21:29:14
-
-This is an email message sent automatically by Microsoft Outlook while testing the settings for your account.
-<html><body><p>This is an email message sent automatically by Microsoft Outlook while testing the settings for your account.
-</p></body></html>
