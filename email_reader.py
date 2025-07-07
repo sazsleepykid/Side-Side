@@ -1,3 +1,4 @@
+
 import os
 import re
 import email
@@ -14,33 +15,54 @@ import getpass
 def sanitize_filename(name):
     return re.sub(r'[\\/*?:"<>|]', "_", name or "no_subject")
 
-def connect_imap_inbox(email_address=None, password=None, imap_server=None, imap_port=993):
+def connect_imap_inbox(email_address=None, password=None, imap_server=None, imap_port=993, silent_mode=False):
     """Connect to email inbox using IMAP"""
-    # Use provided credentials or defaults
+    # Require email and password
     if not email_address:
-        email_address = "pa.sasitheran@cre8iot.com"
+        if silent_mode:
+            raise ValueError("Email address is required")
+        email_address = input("Enter your email address: ")
     
     if not password:
-        password = getpass.getpass(f"Enter password for {email_address} (press Enter to use default): ")
-        if not password:
-            password = "PAsasitheran@2240#2025"
+        if silent_mode:
+            raise ValueError("Password is required")
+        password = getpass.getpass(f"Enter password for {email_address}: ")
     
+    # Default server if not provided
     if not imap_server:
-        imap_server = "np134.mschosting.cloud"
+        # Try to guess IMAP server from email domain
+        domain = email_address.split('@')[1]
+        if domain == 'gmail.com':
+            imap_server = 'imap.gmail.com'
+        elif domain == 'yahoo.com':
+            imap_server = 'imap.mail.yahoo.com'
+        elif domain == 'outlook.com' or domain == 'hotmail.com':
+            imap_server = 'outlook.office365.com'
+        elif domain == 'cre8iot.com':
+            imap_server = 'np134.mschosting.cloud'
+        else:
+            if silent_mode:
+                raise ValueError(f"IMAP server for {domain} is required")
+            imap_server = input(f"Enter IMAP server for {domain} (e.g., imap.{domain}): ")
     
-    print(f"Connecting to {imap_server}:{imap_port} as {email_address}...")
+    if not silent_mode:
+        print(f"Connecting to {imap_server}:{imap_port} as {email_address}...")
     
     # Connect to the IMAP server
     mail = imaplib.IMAP4_SSL(imap_server, imap_port)
     
     try:
         mail.login(email_address, password)
-        print(f"Successfully logged in as {email_address}")
+        if not silent_mode:
+            print(f"Successfully logged in as {email_address}")
         
         # List available mailboxes/folders (for information only)
         status, mailboxes = mail.list()
-        print("\nAvailable mailboxes:")
         mailbox_list = []
+        
+        if not silent_mode:
+            print("\nAvailable mailboxes:")
+            
         for i, mailbox in enumerate(mailboxes, 1):
             try:
                 # Parse mailbox name
@@ -50,7 +72,8 @@ def connect_imap_inbox(email_address=None, password=None, imap_server=None, imap
                 else:
                     mailbox_name = mailbox.decode().split('"')[-2]
                 
-                print(f"{i}. {mailbox_name}")
+                if not silent_mode:
+                    print(f"{i}. {mailbox_name}")
                 mailbox_list.append(mailbox_name)
             except:
                 continue
@@ -67,49 +90,57 @@ def connect_imap_inbox(email_address=None, password=None, imap_server=None, imap
                 break
         
         mail.select(selected_mailbox)
-        print(f"Selected mailbox: {selected_mailbox}")
+        if not silent_mode:
+            print(f"Selected mailbox: {selected_mailbox}")
         
         return mail, email_address
     
     except Exception as e:
-        print(f"Error connecting to email: {e}")
+        if not silent_mode:
+            print(f"Error connecting to email: {e}")
         raise
 
-def fetch_emails_by_date(mail, start_date, end_date, max_emails=1000):
+def fetch_emails_by_date(mail, start_date, end_date, max_emails=1000, silent_mode=False):
     """Fetch emails within a date range using IMAP"""
     # Format dates for IMAP search
     start_date_str = start_date.strftime("%d-%b-%Y")
     end_date_str = end_date.strftime("%d-%b-%Y")
     
-    print(f"Searching for emails between {start_date_str} and {end_date_str}...")
+    if not silent_mode:
+        print(f"Searching for emails between {start_date_str} and {end_date_str}...")
     
     # Search for emails in the date range
     search_criteria = f'(SINCE "{start_date_str}" BEFORE "{end_date_str}")'
     status, data = mail.search(None, search_criteria)
     
     if status != 'OK':
-        print(f"Error searching for emails: {status}")
+        if not silent_mode:
+            print(f"Error searching for emails: {status}")
         return []
     
     # Get email IDs
     email_ids = data[0].split()
     total_emails = len(email_ids)
-    print(f"Found {total_emails} emails in the date range")
+    
+    if not silent_mode:
+        print(f"Found {total_emails} emails in the date range")
     
     # Limit the number of emails to process
     if max_emails and total_emails > max_emails:
-        print(f"Limiting to {max_emails} emails")
+        if not silent_mode:
+            print(f"Limiting to {max_emails} emails")
         email_ids = email_ids[:max_emails]
     
     return email_ids
 
-def fetch_email_data(mail, email_id):
+def fetch_email_data(mail, email_id, silent_mode=False):
     """Fetch and parse a single email"""
     try:
         # Fetch email data
         status, data = mail.fetch(email_id, '(RFC822)')
         if status != 'OK':
-            print(f"Error fetching email {email_id}: {status}")
+            if not silent_mode:
+                print(f"Error fetching email {email_id}: {status}")
             return None
         
         # Parse email
@@ -200,24 +231,30 @@ def fetch_email_data(mail, email_id):
         return email_obj
     
     except Exception as e:
-        print(f"Error processing email: {e}")
+        if not silent_mode:
+            print(f"Error processing email: {e}")
         return None
 
-def group_emails_by_sender(mail, email_ids):
+def group_emails_by_sender(mail, email_ids, silent_mode=False, progress_callback=None):
     """Group emails by sender"""
     grouped = defaultdict(list)
     total = len(email_ids)
     processed = 0
     errors = 0
     
-    print(f"Processing {total} emails...")
+    if not silent_mode:
+        print(f"Processing {total} emails...")
     
     for i, email_id in enumerate(email_ids):
         try:
-            if i % 10 == 0:
+            if not silent_mode and i % 10 == 0:
                 print(f"Processing email {i+1}/{total}...")
             
-            email_obj = fetch_email_data(mail, email_id)
+            # Update progress if callback provided
+            if progress_callback:
+                progress_callback(i, total)
+            
+            email_obj = fetch_email_data(mail, email_id, silent_mode)
             if email_obj:
                 # Store email data
                 msg_data = {
@@ -232,84 +269,25 @@ def group_emails_by_sender(mail, email_ids):
             
         except Exception as e:
             errors += 1
-            if errors < 10:  # Limit error messages
+            if not silent_mode and errors < 10:  # Limit error messages
                 print(f"⚠️ Error processing email #{i + 1}: {e}")
     
-    print(f"✅ Processing complete:")
-    print(f"   - Total emails processed: {processed}")
-    print(f"   - Errors: {errors}")
+    if not silent_mode:
+        print(f"✅ Processing complete:")
+        print(f"   - Total emails processed: {processed}")
+        print(f"   - Errors: {errors}")
     
     if processed == 0:
-        print("\n⚠️ No emails were successfully processed!")
-        print("Suggestions:")
-        print("1. Check your IMAP settings")
-        print("2. Try a different date range")
-        print("3. Try a different mailbox")
-        
-        # Offer to use sample emails for testing
-        if input("\nWould you like to create sample emails for testing? (y/n): ").lower() == 'y':
-            grouped = create_sample_emails()
-            processed = sum(len(emails) for emails in grouped.values())
+        if not silent_mode:
+            print("\n⚠️ No emails were successfully processed!")
+            print("Suggestions:")
+            print("1. Check your IMAP settings")
+            print("2. Try a different date range")
+            print("3. Try a different mailbox")
     
     return grouped
 
-def create_sample_emails():
-    """Create sample emails for testing when no real emails are found"""
-    print("Creating sample test emails...")
-    
-    # Create a mock email structure
-    sample_emails = defaultdict(list)
-    
-    # Sample senders
-    senders = [
-        ("john.doe@example.com", "John Doe"),
-        ("jane.smith@example.com", "Jane Smith"),
-        ("tech.support@example.com", "Tech Support")
-    ]
-    
-    # Sample email contents
-    email_contents = [
-        {
-            "subject": "Project Update - Q2 Report",
-            "body": "Hello team,\n\nI'm pleased to share that our Q2 report is now complete. Key highlights include:\n- 15% revenue growth\n- New client acquisition in Europe\n- Product launch scheduled for August\n\nPlease review the attached documents and provide feedback by Friday.\n\nRegards,\nJohn"
-        },
-        {
-            "subject": "Meeting Reminder: Strategy Session",
-            "body": "Hi everyone,\n\nThis is a reminder about our strategy session tomorrow at 2 PM in Conference Room A.\n\nAgenda:\n1. Market analysis\n2. Competitor review\n3. Q3 planning\n\nPlease bring your department updates.\n\nThanks,\nJane"
-        },
-        {
-            "subject": "System Maintenance Notice",
-            "body": "Dear users,\n\nWe will be performing scheduled maintenance on the server this weekend. The system will be unavailable from Saturday 10 PM to Sunday 2 AM.\n\nWe apologize for any inconvenience this may cause.\n\nTech Support Team"
-        }
-    ]
-    
-    # Create mock email messages
-    for sender_email, sender_name in senders:
-        for i, content in enumerate(email_contents):
-            # Create a date within the last week
-            date = datetime.now() - timedelta(days=i+1)
-            date_str = date.strftime("%a, %d %b %Y %H:%M:%S +0000")
-            
-            # Create a simple email message
-            msg = email.message.EmailMessage()
-            msg['From'] = f"{sender_name} <{sender_email}>"
-            msg['To'] = "pa.sasitheran@cre8iot.com"
-            msg['Subject'] = content["subject"]
-            msg['Date'] = date_str
-            msg.set_content(content["body"])
-            
-            # Add to sample emails
-            sample_emails[sender_email].append({
-                "email_msg": msg,
-                "sender_name": sender_name,
-                "sender_email": sender_email,
-                "raw_email": None
-            })
-    
-    print(f"Created {sum(len(emails) for emails in sample_emails.values())} sample emails")
-    return sample_emails
-
-def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sender", attachments_dir="data/attachments", docs_dir="data/email_docs"):
+def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sender", attachments_dir="data/attachments", docs_dir="data/email_docs", silent_mode=False, progress_callback=None):
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs(attachments_dir, exist_ok=True)
     os.makedirs(docs_dir, exist_ok=True)
@@ -318,6 +296,8 @@ def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sende
     email_metadata = []
     total_saved = 0
     total_attachments = 0
+    total_emails = sum(len(emails) for emails in grouped_emails.values())
+    processed_so_far = 0
 
     for sender_email, emails in grouped_emails.items():
         # Create sender folder
@@ -329,10 +309,16 @@ def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sende
         
         # Get sender name from the first email
         sender_name = emails[0]["sender_name"]
-        print(f"\nProcessing {len(emails)} emails from {sender_name} <{sender_email}>")
+        if not silent_mode:
+            print(f"\nProcessing {len(emails)} emails from {sender_name} <{sender_email}>")
         
         for i, email_data in enumerate(emails, start=1):
             try:
+                # Update progress if callback provided
+                if progress_callback:
+                    processed_so_far += 1
+                    progress_callback(processed_so_far, total_emails)
+                
                 msg = email_data["email_msg"]
                 subject = sanitize_filename(msg.get('Subject', 'No Subject'))
                 
@@ -357,7 +343,7 @@ def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sende
                     if email_data.get("raw_email"):
                         f.write(email_data["raw_email"])
                     else:
-                        # If no raw email (e.g., for sample emails), create one
+                        # If no raw email, create one
                         f.write(msg.as_bytes())
                 
                 # Extract body text
@@ -448,10 +434,12 @@ def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sende
                                     summary_lines.append(f"  📎 Attachment: {att_filename} (saved to {att_path})")
                                     total_attachments += 1
                             except Exception as e:
-                                print(f"⚠️ Failed to save attachment: {e}")
+                                if not silent_mode:
+                                    print(f"⚠️ Failed to save attachment: {e}")
 
             except Exception as e:
-                print(f"⚠️ Failed to save email #{i} from {sender_email}: {e}")
+                if not silent_mode:
+                    print(f"⚠️ Failed to save email #{i} from {sender_email}: {e}")
 
         # Write summary
         summary_file = os.path.join(folder_path, "summary.txt")
@@ -468,20 +456,32 @@ def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sende
     with open(metadata_path, "w", encoding="utf-8") as f:
         json.dump(email_metadata, f, ensure_ascii=False, indent=2)
     
-    print(f"\n✅ Saved {total_saved} emails and {total_attachments} attachments")
+    if not silent_mode:
+        print(f"\n✅ Saved {total_saved} emails and {total_attachments} attachments")
     return email_metadata
 
 def main():
     print("📬 Connecting to email using IMAP...")
     
-    # Use pre-configured IMAP settings
-    email_address = "pa.sasitheran@cre8iot.com"
-    password = getpass.getpass(f"Enter password for {email_address} (press Enter to use default): ")
-    if not password:
-        password = "PAsasitheran@2240#2025"
+    # Get email credentials
+    email_address = input("Enter your email address: ")
+    password = getpass.getpass(f"Enter password for {email_address}: ")
     
-    imap_server = "np134.mschosting.cloud"
-    imap_port = 993
+    # Try to guess IMAP server from email domain
+    domain = email_address.split('@')[1]
+    if domain == 'gmail.com':
+        default_server = 'imap.gmail.com'
+    elif domain == 'yahoo.com':
+        default_server = 'imap.mail.yahoo.com'
+    elif domain == 'outlook.com' or domain == 'hotmail.com':
+        default_server = 'outlook.office365.com'
+    elif domain == 'cre8iot.com':
+        default_server = 'np134.mschosting.cloud'
+    else:
+        default_server = f'imap.{domain}'
+    
+    imap_server = input(f"Enter IMAP server (default: {default_server}): ") or default_server
+    imap_port = int(input("Enter IMAP port (default: 993): ") or "993")
     
     try:
         mail, user_email = connect_imap_inbox(
@@ -544,15 +544,10 @@ def main():
     
     if not email_ids:
         print("❌ No emails found in the specified date range and mailbox.")
-        
-        # Offer to use sample emails for testing
-        if input("\nWould you like to create sample emails for testing? (y/n): ").lower() == 'y':
-            grouped = create_sample_emails()
-        else:
-            return
-    else:
-        # Group emails by sender
-        grouped = group_emails_by_sender(mail, email_ids)
+        return
+    
+    # Group emails by sender
+    grouped = group_emails_by_sender(mail, email_ids)
     
     if not grouped:
         print("❌ No emails were successfully processed.")

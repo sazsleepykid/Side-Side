@@ -17,15 +17,15 @@ venv/
 # 📧 Email Assistant App Data
 # =========================
 
-# Ignore all parsed email data
+# Ignore all raw or parsed email files
+*.txt
+temp_emails/
 data/email_docs/
 data/emails_by_sender/
 data/temp_emails/
 
-# Ignore all model files (GGUF, etc.)
+# Ignore all models and index data
 models/*.gguf
-
-# Ignore metadata/cache/indexes
 data/faiss_index/
 data/chroma_db/
 *.bin
@@ -36,10 +36,7 @@ email_metadata.json
 # 🛠️ IDE / Editor Files
 # =========================
 
-# VS Code
 .vscode/
-
-# PyCharm
 .idea/
 
 # =========================
