@@ -1,0 +1,58 @@
+# =========================
+# 🐍 Python + Virtual Env
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# If using virtualenv/venv
+.venv/
+env/
+venv/
+
+# =========================
+# 📧 Email Assistant App Data
+# =========================
+
+# Ignore all parsed email data
+data/email_docs/
+data/emails_by_sender/
+data/temp_emails/
+
+# Ignore all model files (GGUF, etc.)
+models/*.gguf
+
+# Ignore metadata/cache/indexes
+data/faiss_index/
+data/chroma_db/
+*.bin
+*.sqlite3
+email_metadata.json
+
+# =========================
+# 🛠️ IDE / Editor Files
+# =========================
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# =========================
+# 🚀 Streamlit Deployment
+# =========================
+
+.streamlit/
+*.streamlit-*
+*.pydevproject
+
+# =========================
+# 📦 Miscellaneous
+# =========================
+
+.DS_Store
+Thumbs.db

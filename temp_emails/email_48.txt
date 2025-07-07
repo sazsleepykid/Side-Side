@@ -1,0 +1,996 @@
+Subject: Your meeting recap - Collaboration with NZMind
+From: Fred from Fireflies <fred@fireflies.ai>
+Date: 2025-04-03 16:12:37
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-roboto {
+        font-family: 'Roboto', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+      }
+      .font-poppins {
+        font-family: 'Poppins', 'Roboto', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+      }
+      .font-dm-sans {
+        font-family: 'DM Sans', 'Roboto', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+      }
+      .font-inter {
+        font-family: 'Inter', 'Roboto', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+      }
+      .ff-link {
+        font: inherit;
+        color: #6E75FF!important;
+        text-decoration: underline;
+      }
+      .ff-paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #484f56;
+        padding-top: 21px;
+      }
+    </style>
+  </head>
+  <body
+    class="font-roboto"
+    style="
+      background: #F2F4F7;
+      margin: 0;
+      padding: 24px 0px 40px 0px;
+    "
+  >
+    
+    
+    
+    <table align="center" cellspacing="0" cellpadding="0" style="width: 100%; 
+      background: #ffffff;
+      max-width: 640px; padding: 0 24px;">
+      <tr>
+        <td align="center">
+          <table align="center" style="max-width: 520px; width: 100%;" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="100%" cellspacing="0" cellpadding="0" style="border-spacing: 0px">
+      <tr><td style="padding-top: 72px;"></td></tr>  <tr>
+        <td align="center" valign="middle">
+          <a
+            href="https://app.fireflies.ai/view/Collaboration-with-NZMind::01JQWT7N2KJNDNTBDR6YJN77CY?ref&#x3D;recap&amp;track&#x3D;01JQWT7N2KJNDNTBDR6YJN77CY&amp;sg&#x3D;nb&amp;utm_content&#x3D;header_image"
+            target="_blank"
+          >
+            <img
+              style="max-width: 100%"
+              alt=""
+              width="241"
+              height="auto"
+              src="https://files.fireflies.ai/email-templates/meeting-recap/fred_header.png"
+            />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td 
+          style="
+            text-align: center;
+            padding-top: 24px;
+            padding-bottom: 0px;
+          "
+        >
+          <p style="
+            font-size: 24px;
+            letter-spacing: -0.02em;
+            color: #6E75FF;
+            text-transform: capitalize;
+            font-weight: 500;
+            line-height: 31.68px;
+            margin: 0;
+          "> 
+            Mu. Pathma
+          </p>
+          <a style="
+            margin: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19.68px;
+            color: #484F56;
+            text-decoration: none;
+          " href="mailto:mpathma@gmail.com">(mpathma@gmail.com)</a>
+          <p style="font-size: 24px; margin: 8px 0 0; font-weight: 500; line-height: 31.68px;">invited Fireflies to your meeting</p>
+          <p style="ygg
+            margin-top: 16px;
+            margin-bottom: 0px;
+            color: #484F56;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+          ">To record and take notes</p>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+            <a style="display: block; text-decoration: none!important; margin-top: 30px;" href="https://app.fireflies.ai/view/Collaboration-with-NZMind::01JQWT7N2KJNDNTBDR6YJN77CY?ref&#x3D;recap&amp;track&#x3D;01JQWT7N2KJNDNTBDR6YJN77CY&amp;sg&#x3D;nb&amp;utm_content&#x3D;meeting_card" target="_blank">
+                <div style="border: 1px solid #DFE3E7; box-sizing: border-box; border-radius: 8px; padding: 16px 20px;">
+                    <table style="border-spacing: 0px;">
+                        <tr style="height: 48px;">
+                          <td width="48" style="padding: 0px; font-size: 0px;">
+                            <img width="48" height="48" src="https://files.fireflies.ai/email-templates/img/Calendar.png" >
+                          </td>
+                          <td style="padding-left: 16px; padding-top: 0px; box-sizing: border-box;">
+                            <p style="font-size: 16px; font-weight: 500; margin-top: 0px; margin-bottom: 0px; color: #484F56; line-height: 24px;">
+                            Collaboration with NZMind
+                            </p>
+                            <p style="font-size: 14px; font-weight: 400; margin-top: 2px; margin-bottom: 0px; color: #878F97; line-height: 20px;">Apr 3rd at 4:00 PM MYT</p>
+                          </td>
+                        </tr>
+                    </table>
+                </div>
+            </a>
+        </td>
+      </tr>
+    
+      <tr><td style="padding-top: 21px;"></td></tr>
+    
+      <tr>
+        <td align="center" valign="top" style="line-height: 48px;">
+    <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+              <table
+        style="
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          max-width: 252px;
+        "
+        align="center"
+      >
+        <tr>
+          <td>
+            <a
+              class="font-roboto"
+              href="https://app.fireflies.ai/view/Collaboration-with-NZMind::01JQWT7N2KJNDNTBDR6YJN77CY?ref&#x3D;recap&amp;track&#x3D;01JQWT7N2KJNDNTBDR6YJN77CY&amp;sg&#x3D;nb&amp;utm_content&#x3D;view_recap_cta"
+              style="
+                display: inline-block;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 12px 40px;
+                background: #6e75ff;
+                
+                border: 1px solid #6e75ff;
+                border-radius: 5px;
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                text-decoration: none;
+              "
+            >View meeting recap</a>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+        </td>
+      </tr>
+    
+      <tr><td style="padding-top: 32px;"></td></tr>
+    </table>
+    <table width="100%">
+    
+      <tr><td><div style="width: 100%; border: 0.5px solid #EAEDF0; height: 0px"></div></td></tr>
+      <tr>
+        <td style="padding-top: 32px;">
+          <p style="
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #353B41;
+            margin: 0;
+          ">
+            <span>
+              <img style="
+                margin-right: 4px; 
+                display: inline-block;
+                vertical-align: middle
+              " src="https://files.fireflies.ai/email-templates/meeting-recap/search_blue.png"/>
+            </span>
+            In this meeting
+          </p>
+        </td>
+      </tr>
+    
+      <tr>
+        <td align="center" valign="top" style="padding-top: 24px;">
+            <div style="display: inline-block; vertical-align: top; max-width: 166px; width: 100%;">
+          <table width="100%" cellspacing="0" cellpadding="0" style="border-spacing: 0px; margin-bottom: 4px;">
+            <tr>
+              <td style="
+                text-align: center;
+                padding: 16px 25px;
+                border-radius: 8px;
+                background: #FFF6E8;
+                color: #B57900;
+                font-size: 14px;
+                line-height: 124%;
+                font-family: 'Poppins', 'Roboto', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+                font-weight: 500;
+              ">1+ Questions were asked</td>
+            </tr>
+          </table>
+    </div>
+    
+        </td>
+      </tr>
+    
+    
+    
+      <tr><td style="padding-top: 24px;"></td></tr>
+    
+      <tr>
+        <td>
+          <table
+      style="
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        max-width: 310px;
+      "
+      align="center"
+    >
+      <tr>
+        <td>
+          <a
+            class="font-roboto"
+            href="https://app.fireflies.ai/view/Collaboration-with-NZMind::01JQWT7N2KJNDNTBDR6YJN77CY?ref&#x3D;recap&amp;track&#x3D;01JQWT7N2KJNDNTBDR6YJN77CY&amp;sg&#x3D;nb&amp;utm_content&#x3D;see_insights_cta"
+            style="
+              display: inline-block;
+              box-sizing: border-box;
+              width: 100%;
+              padding: 12px 40px;
+              background: #F5F5FF;
+              
+              border: 1px solid transparent;
+              border-radius: 5px;
+              color: #6E75FF;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 18px;
+              text-align: center;
+              letter-spacing: -0.02em;
+              text-decoration: none;
+            "
+          >See more insights</a>
+        </td>
+      </tr>
+    </table>
+    
+        </td>
+      </tr>
+      <tr><td style="padding-top: 36px;"></td></tr>
+    </table>
+    
+      
+    </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    
+    <table align="center" cellspacing="0" cellpadding="0" style="width: 100%; 
+      background: #ffffff;
+      max-width: 640px;">
+      <tr>
+        <td align="center">
+          <table align="center" style="width: 100%;" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table align="center" width="100%" cellspacing="0" cellpadding="0">
+      <tr><td style="padding-top: 64px;"></td></tr>
+      <tr>
+        <td align="center" valign="middle">
+          <div>
+            <a href="https://app.fireflies.ai/upgrade?utm_content&#x3D;data-residency">
+              <img style="width: 100%; height: auto;" alt="" height="auto" src="https://files.fireflies.ai/email-templates/meeting-recap/enterprise-banner-data-residency.png" />
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    
+    <table align="center" cellspacing="0" cellpadding="0" style="width: 100%; 
+      background: #ffffff;
+      max-width: 640px; padding: 0 24px;">
+      <tr>
+        <td align="center">
+          <table align="center" style="max-width: 520px; width: 100%;" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="100%" cellspacing="0" cellpadding="0" style="border-spacing: 0px">
+      <tr>
+        <td align="center" valign="middle">
+          <div>
+            <p style="
+              font-weight: 400;
+              font-size: 30px;
+              line-height: 40px;
+              text-align: center;
+              letter-spacing: -0.01em;
+              margin: 72px 0 60px;
+              color: #1D2939;
+            ">
+              Supercharge your<br>meetings with AI Assistant 
+            </p>
+          </div>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td style="padding-bottom: 50px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center" valign="top">
+                <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+                        <table>
+                          <tr>
+                            <td style="
+                              padding: 16px;
+                              background-color: #F6FEF9;
+                              border: 1px solid #D1FADF;
+                              height: 125px;
+                              border-radius: 8px;
+                              box-sizing: border-box;
+                              vertical-align: top;
+                            ">
+                              <p style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 21px;
+                                letter-spacing: -0.02em;
+                                color: #28293D;
+                                margin: 0 0 12px 0;
+                              ">
+                                <span>
+                                  <img style="
+                                    margin-right: 8px; 
+                                    display: inline-block;
+                                    vertical-align: middle
+                                  " src="https://files.fireflies.ai/email-templates/meeting-recap/mic.png"/>
+                                </span>
+                                  Record
+                              </p>
+                              
+                              <p style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #344054;
+                                margin: 0;
+                              ">
+                              Just invite Fireflies secure Notetaker to your meetings for seamless recording.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                </div>
+    
+                <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+                        <table>
+                          <tr>
+                            <td style="
+                              padding: 16px;
+                              background-color: #FAFAFF;
+                              border: 1px solid #EBE9FE;
+                              height: 125px;
+                              border-radius: 8px;
+                              box-sizing: border-box;
+                              vertical-align: top;
+                            ">
+                              <p style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 21px;
+                                letter-spacing: -0.02em;
+                                color: #28293D;
+                                margin: 0 0 12px 0;
+                              ">
+                                <span>
+                                  <img style="
+                                    margin-right: 8px; 
+                                    display: inline-block;
+                                    vertical-align: middle
+                                  " src="https://files.fireflies.ai/email-templates/meeting-recap/file-text.png"/>
+                                </span>
+                                  Transcribe
+                              </p>
+                              
+                              <p style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #344054;
+                                margin: 0;
+                              ">
+                              Easily transcribe your live meetings or media files that you can upload.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+                        <table>
+                          <tr>
+                            <td style="
+                              padding: 16px;
+                              background-color: #FFFAFF;
+                              border: 1px solid #F9E9FE;
+                              height: 125px;
+                              border-radius: 8px;
+                              box-sizing: border-box;
+                              vertical-align: top;
+                            ">
+                              <p style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 21px;
+                                letter-spacing: -0.02em;
+                                color: #28293D;
+                                margin: 0 0 12px 0;
+                              ">
+                                <span>
+                                  <img style="
+                                    margin-right: 8px; 
+                                    display: inline-block;
+                                    vertical-align: middle
+                                  " src="https://files.fireflies.ai/email-templates/meeting-recap/list.png"/>
+                                </span>
+                                  Summarize
+                              </p>
+                              
+                              <p style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #344054;
+                                margin: 0;
+                              ">
+                              Instantly get meeting overview, outline, bullet-point notes, action items and more.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                </div>
+    
+                <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+                        <table>
+                          <tr>
+                            <td style="
+                              padding: 16px;
+                              background-color: #FFFCF5;
+                              border: 1px solid #FEF0C7;
+                              height: 125px;
+                              border-radius: 8px;
+                              box-sizing: border-box;
+                              vertical-align: top;
+                            ">
+                              <p style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 21px;
+                                letter-spacing: -0.02em;
+                                color: #28293D;
+                                margin: 0 0 12px 0;
+                              ">
+                                <span>
+                                  <img style="
+                                    margin-right: 8px; 
+                                    display: inline-block;
+                                    vertical-align: middle
+                                  " src="https://files.fireflies.ai/email-templates/meeting-recap/bar-chart-2.png"/>
+                                </span>
+                                  Analyze
+                              </p>
+                              
+                              <p style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #344054;
+                                margin: 0;
+                              ">
+                              Understand your meetings better with conversation intelligence.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+                        <table>
+                          <tr>
+                            <td style="
+                              padding: 16px;
+                              background-color: #FAFAFF;
+                              border: 1px solid #EBE9FE;
+                              height: 125px;
+                              border-radius: 8px;
+                              box-sizing: border-box;
+                              vertical-align: top;
+                            ">
+                              <p style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 21px;
+                                letter-spacing: -0.02em;
+                                color: #28293D;
+                                margin: 0 0 12px 0;
+                              ">
+                                <span>
+                                  <img style="
+                                    margin-right: 8px; 
+                                    display: inline-block;
+                                    vertical-align: middle
+                                  " src="https://files.fireflies.ai/email-templates/meeting-recap/search.png"/>
+                                </span>
+                                  Smart Search
+                              </p>
+                              
+                              <p style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #344054;
+                                margin: 0;
+                              ">
+                              Search across meetings or transcript, action items,  and other important highlights.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                </div>
+    
+                <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+                        <table>
+                          <tr>
+                            <td style="
+                              padding: 16px;
+                              background-color: #F5FAFF;
+                              border: 1px solid #D1E9FF;
+                              height: 125px;
+                              border-radius: 8px;
+                              box-sizing: border-box;
+                              vertical-align: top;
+                            ">
+                              <p style="
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 21px;
+                                letter-spacing: -0.02em;
+                                color: #28293D;
+                                margin: 0 0 12px 0;
+                              ">
+                                <span>
+                                  <img style="
+                                    margin-right: 8px; 
+                                    display: inline-block;
+                                    vertical-align: middle
+                                  " src="https://files.fireflies.ai/email-templates/meeting-recap/users.png"/>
+                                </span>
+                                  Collaborate
+                              </p>
+                              
+                              <p style="
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #344054;
+                                margin: 0;
+                              ">
+                              Comment or mark specific parts in meetings to quickly collaborate with teammates.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                </div>
+              </td>
+            </tr>  
+          </table>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+          <table
+      style="
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        max-width: 310px;
+      "
+      align="center"
+    >
+      <tr>
+        <td>
+          <a
+            class="font-roboto"
+            href="http://app.fireflies.ai/login?utm_content&#x3D;features_cta"
+            style="
+              display: inline-block;
+              box-sizing: border-box;
+              width: 100%;
+              padding: 12px 40px;
+              background: linear-gradient(92.28deg, #7A5AF8 1.69%, #C57CFF 98.08%);
+              background-color: #9e62ff;
+              border: 1px solid transparent;
+              border-radius: 5px;
+              color: #FFFFFF;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 18px;
+              text-align: center;
+              letter-spacing: -0.02em;
+              text-decoration: none;
+            "
+          >Get AI meeting assistant</a>
+        </td>
+      </tr>
+    </table>
+    
+        </td>
+      </tr>
+      <tr><td style="padding-top: 48px;"></td></tr></table>
+    </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table><table align="center" cellspacing="0" cellpadding="0"
+      style="
+        width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 640px;
+        border-spacing: 0px;
+      "  
+    >
+      <tr>
+        <td style="height: 24px;background-color: #F9FAFB;"></td>
+      </tr>
+    </table>
+    <table align="center" cellspacing="0" cellpadding="0" style="width: 100%; 
+      background: #ffffff;
+      max-width: 640px; padding: 0 24px;">
+      <tr>
+        <td align="center">
+          <table align="center" style="max-width: 520px; width: 100%;" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" align="center" style="width: 100%; border-spacing: 0px;">
+    
+      <tr>
+        <td align="center" valign="middle">
+          <div>
+            <p style="
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 27px;
+              color: #353B41;
+            ">
+              How Fireflies works
+            </p>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td align="center" valign="top" style="padding: 0px;">
+          <div style="display: inline-block; vertical-align: top; max-width: 166px; width: 100%;">
+                  <table cellspacing="0" cellpadding="0" style="border-spacing: 0px;">
+                    <tr>
+                      <td style="padding-bottom: 10px;">
+                        <div style="
+                          text-align: center;
+                          border-radius: 8px;
+                        ">
+                          <img width="40" height="40" src="https://files.fireflies.ai/email-templates/img/Calendar.png"/>
+                          <p style="
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            color: #484F56;
+                          "
+                          >Sign up and invite <a style="text-decoration: none; font-size: 14px; color: #484F56;">fred@fireflies.ai</a></p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+          </div>
+          <div style="display: inline-block; vertical-align: top; max-width: 166px; width: 100%;">
+                  <table cellspacing="0" cellpadding="0" style="border-spacing: 0px;">
+                    <tr>
+                      <td style="padding-bottom: 10px;">
+                        <div style="
+                          text-align: center;
+                          border-radius: 8px;
+                        ">
+                          <img width="40" height="40" src="https://files.fireflies.ai/email-templates/img/Video.png"/>
+                          <p style="
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            color: #484F56;
+                          "
+                          >Fireflies.ai Notetaker joins<br/>the meeting</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+          </div>
+          <div style="display: inline-block; vertical-align: top; max-width: 166px; width: 100%;">
+                  <table cellspacing="0" cellpadding="0" style="border-spacing: 0px;">
+                    <tr>
+                      <td style="padding-bottom: 10px;">
+                        <div style="
+                          text-align: center;
+                          border-radius: 8px;
+                        ">
+                          <img width="40" height="40" src="https://files.fireflies.ai/email-templates/img/Transcript.png"/>
+                          <p style="
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            color: #484F56;
+                          "
+                          >Captures and transcribes<br/>the meeting</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td align="center" valign="top" style="padding-top: 24px; line-height: 48px;">
+    <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+              <table
+        style="
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          max-width: 252px;
+        "
+        align="center"
+      >
+        <tr>
+          <td>
+            <a
+              class="font-roboto"
+              href="https://app.fireflies.ai/login?utm_content&#x3D;how_fireflies_works"
+              style="
+                display: inline-block;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 12px 40px;
+                background: #6e75ff;
+                
+                border: 1px solid #6e75ff;
+                border-radius: 5px;
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                text-decoration: none;
+              "
+            >Sign up for free</a>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+    <div style="display: inline-block; vertical-align: top; max-width: 252px; width: 100%;">
+              <table
+        style="
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          max-width: 252px;
+        "
+        align="center"
+      >
+        <tr>
+          <td>
+            <a
+              class="font-roboto"
+              href="https://fireflies.ai/?utm_content&#x3D;how_fireflies_works"
+              style="
+                display: inline-block;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 12px 40px;
+                background: #F5F5FF;
+                
+                border: 1px solid transparent;
+                border-radius: 5px;
+                color: #6E75FF;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                text-decoration: none;
+              "
+            >Learn more</a>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+        </td>
+      </tr>
+    
+      <tr><td style="padding-top: 48px;"></td></tr></table>
+    </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <table align="center" cellspacing="0" cellpadding="0"
+      style="
+        width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 640px;
+        border-spacing: 0px;
+      "  
+    >
+      <tr>
+        <td style="height: 1px;background-color: #EAECF0;"></td>
+      </tr>
+    </table>
+    <table align="center" cellspacing="0" cellpadding="0" style="width: 100%; 
+      background: #ffffff;
+      max-width: 640px; padding: 0 24px;">
+      <tr>
+        <td align="center">
+          <table align="center" style="max-width: 520px; width: 100%;" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="100%" cellspacing="0" cellpadding="0" style="border-spacing: 0px">
+      <tr><td style="padding-top: 24px;"></td></tr>
+      <tr>
+        <td align="center" valign="middle">
+          <div style="padding-top: 20px; padding-bottom: 20px;">
+            <img alt="" src="https://files.fireflies.ai/email-templates/img/Logo.png" />
+          </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td align="center">
+          <p style="
+            display: inline-block;
+            padding: 8px 16px;
+            background: #F0F2F4;
+            border-radius: 16px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #484F56!important;
+          ">
+            Meeting notes taken on behalf of <a style="font-size: inherit;color: inherit; text-decoration: none;">mpathma@gmail.com</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">
+          <table style='border-collapse: collapse; border-spacing: 0; width: 100%;'>
+            <tr>
+              <td>
+                <p
+                  class='font-roboto'
+                  style='
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: -0.01em;
+                    color: #878f97;
+                    margin: 0;
+                  '
+                >
+                  To stop receiving email notifications like this,
+                  <a
+                    style='font: inherit; text-decoration: underline; color: inherit'
+                    href='https://api.firefliesapp.com/notifications/unsubscribe'
+                  >click here to unsubscribe.</a>
+                </p>
+              </td>
+            </tr>
+          </table>    </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="padding-top: 20px; text-align: center;">
+            <a style="font-size: 14px; color: #475467; text-decoration: underline;" href="https://guide.fireflies.ai/hc/en-us/articles/360020097537-Policy-on-Keeping-Information-Safe">DATA SECURITY &amp; POLICY</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+    </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+    <div itemscope itemtype="http://schema.org/EmailMessage">
+      <div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+        <link itemprop="url" href="https://app.fireflies.ai/view/Collaboration-with-NZMind::01JQWT7N2KJNDNTBDR6YJN77CY?ref&#x3D;recap&amp;track&#x3D;01JQWT7N2KJNDNTBDR6YJN77CY&amp;sg&#x3D;nb&cl=action"/>
+        <meta itemprop="name" content="View recap"/>
+      </div>
+      <meta itemprop="description" content="Review your meeting notes"/>
+    </div>
+    
+    <table align="center" style='border-collapse: collapse; border-spacing: 0; width: 100%;'>
+      <tr align="center">
+        <td style="text-align: center; padding-top:30px;">
+          <p class='font-roboto' style="
+            font-size: 14px; 
+            font-style: normal; 
+            font-weight: 300; 
+            line-height: 24px; 
+            color: #666; 
+            ">
+            Fireflies.ai &bull; 5424 Sunol Blvd , Ste 10-531 Pleasanton, CA 94566
+          </p>
+          <p
+            style="font-family: Roboto, sans-serif; font-size: 14px; font-style: normal; font-weight: 300; line-height: 24px; color: #666; ">
+            <a href="https://fireflies.ai/privacy_policy.pdf"
+              style="font-family: Roboto, sans-serif; font-size: 14px; text-decoration: underline; color: #666;">Privacy
+              Policy</a>
+            &bull;
+            <a href="https://fireflies.ai/terms-of-service.pdf"
+              style="font-family: Roboto, sans-serif; font-size: 14px; text-decoration: underline; color: #666;">Terms of
+              Service</a>
+          </p>
+        </td>
+      </tr>
+    </table>  <img src="https://try.fireflies.ai/wf/open?upn=u001.Oxz9qW9BSt1Ui-2FrZAqjgXb5eBRqpLYLM6C4Io-2Fp7tYIRcxUPV6uBkdE9DuYSF6PpYGU9ZmG63YENrnybmL6YU-2Fpypo-2FVOeGchnTaKVMKs1ySOgzUR9qx3mSq0h2lMTM3r3EuT6Gs3x3NTbUZWOiRYU8iG0WUBBiZ-2Bu6yw9MM-2FUPPAsA9XXUWCynsptbgAB5zMInjnyvy3AH9u8bCGh7oGUNnfRPtck15ocuG11-2BfPcqHzSJBLLHQ-2B8blv-2Bz-2B65ko" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
