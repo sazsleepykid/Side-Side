@@ -1,7 +1,7 @@
 import os
 from typing import List
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_chroma import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 
 import torch
@@ -125,3 +125,16 @@ if __name__ == "__main__":
         print("👉 Run `email_reader.py` first to extract emails.")
     except Exception as e:
         print(f"\n❌ Unexpected error: {e}")
+
+
+from db import get_connection
+
+def link_embedding(email_id, chunk_id, vector_store_id="default"):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        INSERT INTO embeddings (email_id, chunk_id, vector_store_id)
+        VALUES (?, ?, ?)
+    """, (email_id, chunk_id, vector_store_id))
+    conn.commit()
+    conn.close()

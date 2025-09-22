@@ -631,6 +631,43 @@ def show_email_interface():
             # Show instructions if no emails fetched yet
             st.info("👈 Use the sidebar to select a mailbox and date range, then click 'Fetch Emails' to load your emails.")
 
+            from db import get_connection
+
+def register_account(email_address, imap_server, imap_port):
+    domain = email_address.split("@")[-1]
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        INSERT INTO accounts (email_address, domain, imap_server, imap_port)
+        VALUES (?, ?, ?, ?)
+    """, (email_address, domain, imap_server, imap_port))
+    account_id = cur.lastrowid
+    conn.commit()
+    conn.close()
+    return account_id
+
+from db import get_connection
+
+def save_chat(account_id, user_msg, assistant_resp, sources):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        INSERT INTO chats (account_id, user_message, assistant_response, sources)
+        VALUES (?, ?, ?, ?)
+    """, (account_id, user_msg, assistant_resp, sources))
+    conn.commit()
+    conn.close()
+
+if st.sidebar.button("🗑️ Clear Chat History"):
+    conn = get_connection()
+    conn.execute("DELETE FROM chats WHERE account_id = ?", (st.session_state.account_id,))
+    conn.commit()
+    conn.close()
+    st.session_state.messages = []
+    st.success("Chat history cleared.")
+
+
+
 # Main app logic
 def main():
     # Check if model exists

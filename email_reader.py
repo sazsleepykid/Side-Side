@@ -460,6 +460,39 @@ def save_emails_and_attachments(grouped_emails, output_dir="data/emails_by_sende
         print(f"\n✅ Saved {total_saved} emails and {total_attachments} attachments")
     return email_metadata
 
+from db import get_connection
+
+def save_email_to_db(account_id, email_obj, raw_path, attachments):
+    conn = get_connection()
+    cur = conn.cursor()
+
+    cur.execute("""
+        INSERT INTO emails (account_id, email_uid, sender_name, sender_email, subject, body, date, has_attachments, raw_path)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        account_id,
+        email_obj["id"],
+        email_obj["sender_name"],
+        email_obj["sender_email"],
+        email_obj["subject"],
+        email_obj["body"],
+        email_obj["date"],
+        1 if attachments else 0,
+        raw_path
+    ))
+    email_id = cur.lastrowid
+
+    for att in attachments:
+        cur.execute("""
+            INSERT INTO attachments (email_id, filename, file_path)
+            VALUES (?, ?, ?)
+        """, (email_id, att["filename"], att["file_path"]))
+
+    conn.commit()
+    conn.close()
+    return email_id
+
+
 def main():
     print("📬 Connecting to email using IMAP...")
     
